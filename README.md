@@ -1,6 +1,6 @@
 # Minimal Pybind11 + Numpy Template
 
-Easy template for pybind11 + numpy.
+Easy template for pybind11 + numpy modified from [the Duke pybind tutorial][1].
 
 ## Installation
 
