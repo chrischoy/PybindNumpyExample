@@ -13,4 +13,9 @@ if __name__ == '__main__':
     wrap.twice(xs)
     print(xs)
 
+    print(A)
+    print(wrap.scale(A, 2))
+
+    print(wrap.det(A))
+    wrap.scale_inplace(A, 2)
     print(wrap.det(A))
