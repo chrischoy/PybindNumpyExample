@@ -4,7 +4,10 @@ Easy template for pybind11 + numpy modified from [the Duke pybind tutorial][1].
 
 ## Installation
 
+Install anaconda for fast eigen and virtual environment management.
+
 ```
+conda install numpy pybind11 eigen
 python setup.py build_ext -i
 ```
 

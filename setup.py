@@ -1,13 +1,17 @@
+import os.path as osp
+
 from distutils.core import setup, Extension
 from distutils.sysconfig import get_python_inc
 
 cpp_args = ['-std=c++11']
 
+py_inc = get_python_inc()
+
 ext_modules = [
     Extension(
         'wrap',
         ['code.cpp'],
-        include_dirs=[get_python_inc()],
+        include_dirs=[py_inc, osp.join(py_inc, '../eigen3')],
         language='c++',
         extra_compile_args=cpp_args,
     ),
